@@ -8,7 +8,7 @@ export default function Footer() {
                     <span>&lt;</span> Built with{' '}
                     <span style={{ color: 'var(--syntax-red)' }}>♥</span> and{' '}
                     <span style={{ color: 'var(--syntax-blue)' }}>Next.js</span> ·{' '}
-                    © {currentYear} Alex Developer <span>/&gt;</span>
+                    © {currentYear} Gideon <span>/&gt;</span>
                 </p>
                 <div className="footer__links">
                     <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">

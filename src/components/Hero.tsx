@@ -109,7 +109,7 @@ export default function Hero() {
                     </div>
                     <p className="hero__greeting">{'> Hello, World! I\'m'}</p>
                     <h1 className="hero__title">
-                        Alex<br />
+                        Gideon<br />
                         <span className="hero__title-accent">Developer</span>
                     </h1>
                     <p className="hero__description">

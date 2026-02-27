@@ -12,16 +12,16 @@ const stats = [
 const codeLines = [
     { num: 1, parts: [{ text: 'interface ', color: 'var(--syntax-purple)' }, { text: 'Developer ', color: 'var(--syntax-cyan)' }, { text: '{', color: 'var(--text-primary)' }] },
     { num: 2, parts: [{ text: '  name', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: 'string', color: 'var(--syntax-cyan)' }, { text: ';', color: 'var(--text-primary)' }] },
-    { num: 3, parts: [{ text: '  role', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: 'string', color: 'var(--syntax-cyan)' }, { text: ';', color: 'var(--text-primary)' }] },
-    { num: 4, parts: [{ text: '  skills', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: 'string[]', color: 'var(--syntax-cyan)' }, { text: ';', color: 'var(--text-primary)' }] },
-    { num: 5, parts: [{ text: '  passion', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: 'boolean', color: 'var(--syntax-cyan)' }, { text: ';', color: 'var(--text-primary)' }] },
+    { num: 3, parts: [{ text: '  role', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: 'string[]', color: 'var(--syntax-cyan)' }, { text: ';', color: 'var(--text-primary)' }] },
+    { num: 4, parts: [{ text: '  stack', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: 'string[]', color: 'var(--syntax-cyan)' }, { text: ';', color: 'var(--text-primary)' }] },
+    { num: 5, parts: [{ text: '  audits', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: 'number', color: 'var(--syntax-cyan)' }, { text: ';', color: 'var(--text-primary)' }] },
     { num: 6, parts: [{ text: '}', color: 'var(--text-primary)' }] },
     { num: 7, parts: [] },
     { num: 8, parts: [{ text: 'const ', color: 'var(--syntax-purple)' }, { text: 'me', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: 'Developer', color: 'var(--syntax-cyan)' }, { text: ' = {', color: 'var(--text-primary)' }] },
-    { num: 9, parts: [{ text: '  name', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: '"Alex Developer"', color: 'var(--syntax-green)' }, { text: ',', color: 'var(--text-primary)' }] },
-    { num: 10, parts: [{ text: '  role', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: '"Full-Stack Engineer"', color: 'var(--syntax-green)' }, { text: ',', color: 'var(--text-primary)' }] },
-    { num: 11, parts: [{ text: '  skills', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: '[', color: 'var(--text-primary)' }, { text: '"TS"', color: 'var(--syntax-green)' }, { text: ', ', color: 'var(--text-primary)' }, { text: '"React"', color: 'var(--syntax-green)' }, { text: ', ', color: 'var(--text-primary)' }, { text: '"Node"', color: 'var(--syntax-green)' }, { text: ']', color: 'var(--text-primary)' }, { text: ',', color: 'var(--text-primary)' }] },
-    { num: 12, parts: [{ text: '  passion', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: 'true', color: 'var(--syntax-orange)' }] },
+    { num: 9, parts: [{ text: '  name', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: '"Gideon Oluwagbade"', color: 'var(--syntax-green)' }, { text: ',', color: 'var(--text-primary)' }] },
+    { num: 10, parts: [{ text: '  role', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: '[', color: 'var(--text-primary)' }, { text: '"Blockchain Dev"', color: 'var(--syntax-green)' }, { text: ', ', color: 'var(--text-primary)' }, { text: '"Security Researcher"', color: 'var(--syntax-green)' }, { text: ']', color: 'var(--text-primary)' }, { text: ',', color: 'var(--text-primary)' }] },
+    { num: 11, parts: [{ text: '  stack', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: '[', color: 'var(--text-primary)' }, { text: '"Solidity"', color: 'var(--syntax-green)' }, { text: ', ', color: 'var(--text-primary)' }, { text: '"MERN"', color: 'var(--syntax-green)' }, { text: ', ', color: 'var(--text-primary)' }, { text: '"Next.js"', color: 'var(--syntax-green)' }, { text: ']', color: 'var(--text-primary)' }, { text: ',', color: 'var(--text-primary)' }] },
+    { num: 12, parts: [{ text: '  audits', color: 'var(--syntax-blue)' }, { text: ': ', color: 'var(--text-primary)' }, { text: '12', color: 'var(--syntax-orange)' }] },
     { num: 13, parts: [{ text: '};', color: 'var(--text-primary)' }] },
 ];
 
@@ -59,20 +59,21 @@ export default function About() {
             <div className="about__grid">
                 <div className="about__text animate-on-scroll">
                     <p>
-                        I&apos;m a <span className="about__highlight">full-stack software engineer</span> with
-                        5+ years of experience building scalable web applications and distributed systems.
-                        I specialize in creating exceptional digital experiences that live at the intersection
-                        of design and engineering.
+                        I&apos;m a <span className="about__highlight">blockchain developer & security researcher</span> with
+                        expertise in building decentralized applications, smart contract development, and
+                        Web3 security auditing. I also build modern full-stack web applications using the
+                        MERN stack and Next.js.
                     </p>
                     <p>
-                        My journey started with <span className="about__highlight">curiosity</span> — tinkering
-                        with HTML in my teenage years. Today, I architect and build production systems that
-                        serve millions of users. I believe in clean code, thoughtful architecture, and
-                        shipping products that make a difference.
+                        My journey spans <span className="about__highlight">DeFi protocols</span>, NFT marketplaces,
+                        and smart contract security — participating in competitive audits on Code4rena,
+                        Sherlock, and Codehawks with 12 H/M findings. I believe in secure, clean code
+                        and building products that push the boundaries of decentralized technology.
                     </p>
                     <p>
-                        When I&apos;m not coding, you&apos;ll find me contributing to open-source projects,
-                        writing technical articles, or exploring the latest in cloud-native technologies.
+                        When I&apos;m not auditing smart contracts, you&apos;ll find me building full-stack
+                        web applications, contributing to open-source, or exploring the latest in
+                        blockchain security and DeFi innovation.
                     </p>
 
                     <div className="about__stats">
