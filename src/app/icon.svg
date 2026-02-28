@@ -1,0 +1,21 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff" />
+      <stop offset="50%" stop-color="#d2a8ff" />
+      <stop offset="100%" stop-color="#ff9bce" />
+    </linearGradient>
+    <linearGradient id="logoGradientBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(88,166,255,0.15)" />
+      <stop offset="100%" stop-color="rgba(210,168,255,0.15)" />
+    </linearGradient>
+  </defs>
+  <!-- Hexagonal background -->
+  <path d="M50 4L93.3 27V73L50 96L6.7 73V27L50 4Z" fill="url(#logoGradientBg)" stroke="url(#logoGradient)" stroke-width="2.5" />
+  <!-- Left bracket -->
+  <path d="M28 36L18 50L28 64" stroke="url(#logoGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Right bracket -->
+  <path d="M72 36L82 50L72 64" stroke="url(#logoGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Letter G -->
+  <text x="50" y="58" text-anchor="middle" fill="url(#logoGradient)" font-family="Inter, sans-serif" font-weight="800" font-size="36">G</text>
+</svg>

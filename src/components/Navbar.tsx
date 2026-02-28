@@ -24,9 +24,31 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`} id="navbar">
       <div className="navbar__inner">
         <a href="#" className="navbar__logo">
-          <span className="navbar__logo-bracket">&lt;</span>
-          <span className="navbar__logo-name">dev</span>
-          <span className="navbar__logo-bracket">/&gt;</span>
+          <svg className="navbar__logo-icon" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#58a6ff" />
+                <stop offset="50%" stopColor="#d2a8ff" />
+                <stop offset="100%" stopColor="#ff9bce" />
+              </linearGradient>
+              <linearGradient id="logoGradientBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="rgba(88,166,255,0.12)" />
+                <stop offset="100%" stopColor="rgba(210,168,255,0.12)" />
+              </linearGradient>
+            </defs>
+            {/* Hexagonal background */}
+            <path d="M50 4L93.3 27V73L50 96L6.7 73V27L50 4Z" fill="url(#logoGradientBg)" stroke="url(#logoGradient)" strokeWidth="2.5" />
+            {/* Left bracket */}
+            <path d="M28 36L18 50L28 64" stroke="url(#logoGradient)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+            {/* Right bracket */}
+            <path d="M72 36L82 50L72 64" stroke="url(#logoGradient)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+            {/* Letter G */}
+            <text x="50" y="58" textAnchor="middle" fill="url(#logoGradient)" fontFamily="Inter, sans-serif" fontWeight="800" fontSize="36">G</text>
+          </svg>
+          <span className="navbar__logo-text">
+            <span className="navbar__logo-name">Gideon</span>
+            <span className="navbar__logo-tag">.dev</span>
+          </span>
           <span className="navbar__logo-cursor" />
         </a>
 

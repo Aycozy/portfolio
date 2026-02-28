@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     'Node.js',
     'Portfolio',
   ],
+  icons: {
+    icon: '/icon.svg',
+    apple: '/icon.svg',
+  },
   openGraph: {
     title: 'Gideon | Full-Stack Software Engineer',
     description:

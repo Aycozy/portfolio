@@ -267,16 +267,33 @@ a:hover {
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
+  gap: 10px;
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--text-primary);
   text-decoration: none;
+  transition: all var(--transition-base);
 }
 
-.navbar__logo-bracket {
-  color: var(--syntax-purple);
+.navbar__logo:hover {
+  color: var(--text-primary);
+}
+
+.navbar__logo-icon {
+  transition: all var(--transition-base);
+  filter: drop-shadow(0 0 8px rgba(88, 166, 255, 0.15));
+}
+
+.navbar__logo:hover .navbar__logo-icon {
+  filter: drop-shadow(0 0 16px rgba(88, 166, 255, 0.4));
+  transform: scale(1.05);
+}
+
+.navbar__logo-text {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
 }
 
 .navbar__logo-name {
@@ -284,6 +301,15 @@ a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.navbar__logo-tag {
+  color: var(--syntax-green);
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
 .navbar__logo-cursor {
