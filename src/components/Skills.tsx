@@ -32,19 +32,6 @@ const skillCategories = [
         ],
     },
     {
-        title: 'DevOps & Cloud',
-        iconClass: 'skill-category__icon--devops',
-        icon: '☁',
-        skills: [
-            { name: 'Docker', dotColor: 'blue' },
-            { name: 'Kubernetes', dotColor: 'blue' },
-            { name: 'AWS', dotColor: 'orange' },
-            { name: 'GCP', dotColor: 'red' },
-            { name: 'CI/CD', dotColor: 'green' },
-            { name: 'Terraform', dotColor: 'purple' },
-        ],
-    },
-    {
         title: 'Tools & Practices',
         iconClass: 'skill-category__icon--tools',
         icon: '🛠',
@@ -55,6 +42,20 @@ const skillCategories = [
             { name: 'TDD', dotColor: 'green' },
             { name: 'REST APIs', dotColor: 'cyan' },
             { name: 'Figma', dotColor: 'purple' },
+        ],
+    },
+    {
+        title: 'Security Research',
+        iconClass: 'skill-category__icon--security',
+        icon: '🛡',
+        skills: [
+            { name: 'Smart Contract Auditing', dotColor: 'red' },
+            { name: 'Code4rena', dotColor: 'green' },
+            { name: 'Sherlock', dotColor: 'purple' },
+            { name: 'Foundry', dotColor: 'yellow' },
+            { name: 'Hardhat', dotColor: 'yellow' },
+            { name: 'Slither', dotColor: 'cyan' },
+            { name: 'Immunefi', dotColor: 'blue' },
         ],
     },
 ];

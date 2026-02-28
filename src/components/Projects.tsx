@@ -15,9 +15,10 @@ const projects = [
             { name: 'SEO', color: '#47A248' },
             { name: 'Vercel', color: '#ffffff' },
         ],
+        image: '/projects/premcare.png',
         imageBg: 'linear-gradient(135deg, #0a2e1a, #134e2e, #1a6b3c)',
         github: 'https://github.com/Aycozy/premcare',
-        live: 'https://premcarephysiotherapyclinic.com',
+        live: 'https://www.premcarephysiotherapyclinic.com/',
     },
     {
         title: 'VertexAI NFT Marketplace',
@@ -30,9 +31,10 @@ const projects = [
             { name: 'ERC721', color: '#627EEA' },
             { name: 'JavaScript', color: '#F7DF1E' },
         ],
+        image: '/projects/vertexai.png',
         imageBg: 'linear-gradient(135deg, #0f0c29, #302b63, #24243e)',
         github: 'https://github.com/Aycozy/VERTEXAI_TESTNET',
-        live: null,
+        live: 'https://vertexai-testnet.vercel.app/',
     },
     {
         title: 'KiwiSwap',
@@ -44,6 +46,7 @@ const projects = [
             { name: 'Foundry', color: '#F7DF1E' },
             { name: 'DeFi', color: '#627EEA' },
         ],
+        image: '/projects/kiwiswap.png',
         imageBg: 'linear-gradient(135deg, #0a4d2e, #1a6b3c, #2d8f4e)',
         github: 'https://github.com/Aycozy/Kiwiswap',
         live: null,
@@ -58,6 +61,7 @@ const projects = [
             { name: 'DeFi', color: '#627EEA' },
             { name: 'Web3', color: '#F16822' },
         ],
+        image: '/projects/fluttertrade.png',
         imageBg: 'linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)',
         github: 'https://github.com/Aycozy/FlutterTrade',
         live: null,
@@ -72,23 +76,9 @@ const projects = [
             { name: 'Makefile', color: '#427819' },
             { name: 'Ethereum', color: '#627EEA' },
         ],
+        image: '/projects/pegasus.png',
         imageBg: 'linear-gradient(135deg, #1a0533, #2d1b69, #24243e)',
         github: 'https://github.com/Aycozy/Pegasus',
-        live: null,
-    },
-    {
-        title: 'Web3 Security Audit Portfolio',
-        description: 'Blockchain security research portfolio showcasing competitive audit findings across Code4rena, Sherlock, and Codehawks. 12 H/M findings including 6 Highs, 2 Mediums, and 4 Lows.',
-        status: 'Active',
-        techStack: [
-            { name: 'Solidity', color: '#363636' },
-            { name: 'Security', color: '#DC382D' },
-            { name: 'Code4rena', color: '#27C93F' },
-            { name: 'Sherlock', color: '#412991' },
-            { name: 'Immunefi', color: '#2088FF' },
-        ],
-        imageBg: 'linear-gradient(135deg, #2d0a0a, #4a1a1a, #1a0a2d)',
-        github: 'https://github.com/Aycozy/Web3-security-PortFolio',
         live: null,
     },
 ];
@@ -131,22 +121,16 @@ export default function Projects() {
                         className="project-card animate-on-scroll"
                         style={{ transitionDelay: `${index * 0.1}s` }}
                     >
-                        <div className="project-card__image">
-                            <div
+                        <div className="project-card__image" style={{ background: project.imageBg }}>
+                            <img
+                                src={project.image}
+                                alt={project.title}
                                 style={{
                                     width: '100%',
                                     height: '100%',
-                                    background: project.imageBg,
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    fontFamily: 'var(--font-mono)',
-                                    fontSize: '2.5rem',
-                                    color: 'rgba(255,255,255,0.1)',
+                                    objectFit: 'cover',
                                 }}
-                            >
-                                {'</>'}
-                            </div>
+                            />
                             <div className="project-card__image-gradient" />
 
                             {/* Tech Stack Overlay on Hover */}
